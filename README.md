@@ -73,7 +73,7 @@ tl;dr: Grab a firmware update from Sindoh and put `nc -llp 2323 -e /bin/sh` into
 `_update_rodin_up/snapshot_version.sh`. Connect with `rlwrap -S'# ' nc $PRINTER 2323` or so.
 **DO NOT** log in via telnet or ssh. The root filesystem is mounted and all
 vendor binaries are started from `/etc/profile` (which presumably gets triggered by an auto-login on
-ttyS0), so starting a login shell will cause a sort-of second boot, potentially destructing data
+ttyS0), so starting a login shell will cause a sort-of second boot, potentially destroying data
 (read: brick your printer).
 
 The `/app/auto_update.sh` will search for a `update.she` (encrypted shell script) on an inserted USB
