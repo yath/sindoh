@@ -1,0 +1,17 @@
+Processor       : PJ4B-MP ARMv7 rev 1 (v7l)
+processor       : 0
+BogoMIPS        : 789.70
+
+processor       : 1
+BogoMIPS        : 789.70
+
+Features        : swp half fastmult vfp edsp neon vfpv3 tls 
+CPU implementer : 0x56
+CPU architecture: 7
+CPU variant     : 0x2
+CPU part        : 0x584
+CPU revision    : 1
+
+Hardware        : mv61x0
+Revision        : 0021
+Serial          : 0000000000000000

@@ -1,0 +1,1 @@
+Linux version 3.2.0-g67a8e16 (kyungbal@kyungbal-ThinkPad-T520) (gcc version 4.6.4 20120630 (prerelease) (Linaro GCC branch-4.6.4. Marvell GCC 201208-1593.24ba3e13) ) #20 SMP PREEMPT Wed Jan 24 16:15:58 KST 2018

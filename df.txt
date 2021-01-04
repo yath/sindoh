@@ -1,0 +1,7 @@
+Filesystem           1K-blocks      Used Available Use% Mounted on
+ubi0:filesystem         264580    207128     57452  78% /
+mdev                    247384         0    247384   0% /dev
+none                    409600        36    409564   0% /tmp
+shm                     247384         4    247380   0% /dev/shm
+ubi1:backup               4928        48      4592   1% /backup
+/dev/sda1             15281568     86976  15194592   1% /mnt/sda1

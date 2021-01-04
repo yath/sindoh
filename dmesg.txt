@@ -1,0 +1,507 @@
+Booting Linux on physical CPU 0
+Initializing cgroup subsys cpu
+Linux version 3.2.0-g67a8e16 (kyungbal@kyungbal-ThinkPad-T520) (gcc version 4.6.4 20120630 (prerelease) (Linaro GCC branch-4.6.4. Marvell GCC 201208-1593.24ba3e13) ) #20 SMP PREEMPT Wed Jan 24 16:15:58 KST 2018
+CPU: PJ4B-MP ARMv7 [562f5841] revision 1 (ARMv7), cr=10c5387d
+CPU: PIPT / VIPT nonaliasing data cache, PIPT instruction cache
+Machine: mv61x0
+Memory policy: ECC disabled, Data cache writealloc
+On node 0 totalpages: 131072
+free_area_init_node: node 0, pgdat c09f3f20, node_mem_map c0a62000
+  Normal zone: 1024 pages used for memmap
+  Normal zone: 0 pages reserved
+  Normal zone: 130048 pages, LIFO batch:31
+setup_arch: RESERVED_MEM_SIZE = (16777216)!
+mach_RsvdMemInit: RsvdMemSize = 16777216!
+mach_RsvdMemInit: reserveSize=16777216, reservePaddr=00e66000
+PERCPU: Embedded 8 pages/cpu @c1e69000 s9696 r8192 d14880 u32768
+pcpu-alloc: s9696 r8192 d14880 u32768 alloc=8*4096
+pcpu-alloc: [0] 0 [0] 1 
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 130048
+Kernel command line: console=ttyS0,115200n8 mtdparts=mv61x0_nand:0x800000(kernel),0x20000(u-boot-env),0x80000(bbt)ro,0x100000(boot-logo),0x800000(backup),0xC800000(recovery),-(filesystem) ubi.mtd=filesystem root=ubi0:filesystem rootfstype=ubifs BUSFREQ=200000000 ASICREV=C0 lxkearlycon=uart8250,mmio32,0xf8060000 synopGMAC_Mem.ethaddr=00:18:21:50:48:10 mv61tft.boot_time=17 mv61tft.bar_color=0
+PID hash table entries: 2048 (order: 1, 8192 bytes)
+Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+allocated 2097152 bytes of page_cgroup
+please try 'cgroup_disable=memory' option if you don't want memory cgroups
+Memory: 512MB = 512MB total
+Memory: 490608k/490608k available, 33680k reserved, 0K highmem
+Virtual kernel memory layout:
+    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+    fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+    vmalloc : 0xe0800000 - 0xf8000000   ( 376 MB)
+    lowmem  : 0xc0000000 - 0xe0000000   ( 512 MB)
+    pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+    modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+      .text : 0xc0008000 - 0xc056f000   (5532 kB)
+      .init : 0xc056f000 - 0xc097f5e0   (4162 kB)
+      .data : 0xc0980000 - 0xc09f5b50   ( 471 kB)
+       .bss : 0xc09f5b74 - 0xc0a61fc4   ( 434 kB)
+Preemptible hierarchical RCU implementation.
+NR_IRQS:604
+busfreq 200000000
+busfreq dithered 198000000
+Console: colour dummy device 80x30
+Calibrating delay loop... 789.70 BogoMIPS (lpj=3948544)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 512
+Initializing cgroup subsys memory
+CPU: Testing write buffer coherency: ok
+ftrace: allocating 16157 entries in 48 pages
+CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+hw perfevents: enabled with ARMv7 PJ4B-MP PMU driver, 7 counters available
+L2x0 series cache controller enabled
+l2x0: 8 ways, CACHE_ID 0x00000001, AUX_CTRL 0x300000f0, Cache size: 65536 B
+CPU1: Booted secondary processor
+CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+Brought up 2 CPUs
+SMP: Total of 2 processors activated (1579.41 BogoMIPS).
+NET: Registered protocol family 16
+ASSP revision identified as C1
+set_pin_config 64 0 GPIO in slew=0 sync 
+set_pin_config 66 0 GPIO out drv=0 slew=0 sync 
+set_pin_config 67 0 GPIO out drv=1 slew=0 sync 
+set_pin_config 68 1 slew=0 raw 
+set_pin_config 69 1 slew=0 raw 
+set_pin_config 48 1 slew=0 raw 
+set_pin_config 49 1 slew=0 raw 
+set_pin_config 50 1 slew=0 raw 
+set_pin_config 51 1 slew=0 raw 
+set_pin_config 52 1 slew=0 raw 
+set_pin_config 53 1 slew=0 raw 
+set_pin_config 54 1 slew=0 raw 
+set_pin_config 55 1 slew=0 raw 
+set_pin_config 56 1 slew=0 raw 
+set_pin_config 57 1 slew=0 raw 
+set_pin_config 58 1 slew=0 raw 
+set_pin_config 59 1 slew=0 raw 
+set_pin_config 60 1 slew=0 raw 
+set_pin_config 61 1 slew=0 raw 
+set_pin_config 63 1 slew=0 raw 
+set_pin_config 7 1 slew=0 raw 
+set_pin_config 8 1 slew=0 raw 
+set_pin_config 9 1 slew=0 raw 
+set_pin_config 10 1 slew=0 raw 
+set_pin_config 11 1 slew=0 raw 
+set_pin_config 70 2 slew=0 raw 
+set_pin_config 71 2 slew=0 raw 
+set_pin_config 72 0 GPIO out drv=0 slew=0 sync 
+set_pin_config 73 0 GPIO out drv=0 slew=0 sync 
+set_pin_config 74 0 GPIO out drv=0 slew=0 sync 
+set_pin_config 138 0 GPIO out drv=1 slew=0 sync 
+set_pin_config 139 0 GPIO out drv=0 slew=0 sync 
+set_pin_config 140 0 GPIO out drv=0 slew=0 sync 
+set_pin_config 141 0 GPIO out drv=0 slew=0 sync 
+set_pin_config 142 0 GPIO out drv=0 slew=0 sync 
+set_pin_config 143 0 GPIO out drv=0 slew=0 sync 
+set_pin_config 144 0 GPIO out drv=0 slew=0 sync 
+set_pin_config 145 0 GPIO out drv=0 slew=0 sync 
+set_pin_config 146 0 GPIO out drv=0 slew=0 sync 
+set_pin_config 147 0 GPIO out drv=0 slew=0 sync 
+set_pin_config 148 0 GPIO out drv=1 slew=0 sync 
+set_pin_config 149 0 GPIO out drv=0 slew=0 sync 
+set_pin_config 150 0 GPIO out drv=0 slew=0 sync 
+set_pin_config 151 0 GPIO out drv=0 slew=0 sync 
+set_pin_config 166 1 slew=0 raw 
+set_pin_config 167 1 slew=0 raw 
+set_pin_config 168 1 slew=0 raw 
+set_pin_config 169 1 slew=0 raw 
+set_pin_config 170 1 slew=0 raw 
+set_pin_config 171 1 slew=0 raw 
+set_pin_config 172 1 slew=0 raw 
+set_pin_config 173 1 slew=0 raw 
+set_pin_config 174 1 slew=0 raw 
+set_pin_config 176 2 slew=0 raw 
+set_pin_config 177 2 slew=0 raw 
+set_pin_config 178 2 slew=0 raw 
+set_pin_config 179 2 slew=0 raw 
+set_pin_config 180 3 slew=0 raw 
+set_pin_config 181 3 slew=0 raw 
+set_pin_config 182 3 slew=0 raw 
+set_pin_config 183 3 slew=0 raw 
+set_pin_config 184 3 slew=0 raw 
+set_pin_config 185 2 slew=0 raw 
+set_pin_config 186 2 slew=0 raw 
+set_pin_config 187 2 slew=0 raw 
+set_pin_config 188 2 slew=0 raw 
+set_pin_config 189 1 slew=0 raw 
+set_pin_config 190 1 slew=0 raw 
+set_pin_config 191 1 slew=0 raw 
+set_pin_config 192 1 slew=0 raw 
+set_pin_config 194 1 slew=0 raw 
+set_pin_config 195 1 slew=0 raw 
+set_pin_config 196 1 slew=0 raw 
+set_pin_config 205 0 GPIO out drv=0 slew=0 sync 
+set_pin_config 206 0 GPIO out drv=1 slew=0 sync 
+set_pin_config 207 0 GPIO out drv=1 slew=0 sync 
+set_pin_config 208 0 GPIO out drv=0 slew=0 sync 
+set_pin_config 209 0 GPIO out drv=0 slew=0 sync 
+set_pin_config 129 0 GPIO in slew=0 sync 
+set_pin_config 130 0 GPIO in slew=0 sync 
+set_pin_config 131 0 GPIO in slew=0 sync 
+set_pin_config 152 3 slew=0 raw 
+set_pin_config 154 3 slew=0 raw 
+set_pin_config 96 2 slew=0 raw 
+set_pin_config 97 2 slew=0 raw 
+set_pin_config 98 2 slew=0 raw 
+set_pin_config 99 0 GPIO out drv=0 slew=0 sync 
+set_pin_config 100 0 GPIO out drv=0 slew=0 sync 
+set_pin_config 101 0 GPIO out drv=0 slew=0 sync 
+set_pin_config 102 2 slew=0 raw 
+set_pin_config 103 2 slew=0 raw 
+set_pin_config 104 2 slew=0 raw 
+set_pin_config 105 0 GPIO out drv=0 slew=0 sync 
+set_pin_config 106 0 GPIO out drv=0 slew=0 sync 
+set_pin_config 107 0 GPIO out drv=0 slew=0 sync 
+set_pin_config 108 2 slew=0 raw 
+set_pin_config 109 2 slew=0 raw 
+set_pin_config 110 2 slew=0 raw 
+set_pin_config 111 0 GPIO out drv=0 slew=0 sync 
+set_pin_config 112 0 GPIO out drv=0 slew=0 sync 
+set_pin_config 113 0 GPIO out drv=0 slew=0 sync 
+set_pin_config 114 2 slew=0 raw 
+set_pin_config 115 2 slew=0 raw 
+set_pin_config 116 2 slew=0 raw 
+set_pin_config 117 0 GPIO out drv=0 slew=0 sync 
+set_pin_config 118 0 GPIO out drv=0 slew=0 sync 
+set_pin_config 119 0 GPIO out drv=1 slew=0 sync 
+set_pin_config 120 2 slew=0 raw 
+set_pin_config 121 2 slew=0 raw 
+set_pin_config 122 2 slew=0 raw 
+set_pin_config 123 2 slew=0 raw 
+set_pin_config 124 2 slew=0 raw 
+set_pin_config 125 0 GPIO out drv=1 slew=0 sync 
+set_pin_config 126 0 GPIO out drv=1 slew=0 sync 
+set_pin_config 127 0 GPIO out drv=1 slew=0 sync 
+set_pin_config 160 3 slew=0 raw 
+set_pin_config 161 3 slew=0 raw 
+set_pin_config 162 3 slew=0 raw 
+set_pin_config 163 3 slew=0 raw 
+set_pin_config 34 1 slew=0 raw 
+set_pin_config 35 1 slew=0 raw 
+set_pin_config 36 1 slew=0 raw 
+set_pin_config 37 1 slew=0 raw 
+set_pin_config 38 1 slew=0 raw 
+set_pin_config 39 1 slew=0 raw 
+set_pin_config 40 1 slew=0 raw 
+set_pin_config 41 1 slew=0 raw 
+set_pin_config 42 1 slew=0 raw 
+set_pin_config 43 1 slew=0 raw 
+set_pin_config 44 1 slew=0 raw 
+set_pin_config 45 1 slew=0 raw 
+set_pin_config 46 1 slew=0 raw 
+set_pin_config 47 1 slew=0 raw 
+set_pin_config 32 2 slew=0 raw 
+set_pin_config 33 2 slew=0 raw 
+set_pin_config 3 2 slew=0 raw 
+set_pin_config 4 2 slew=0 raw 
+set_pin_config 5 2 slew=0 raw 
+set_pin_config 6 2 slew=0 raw 
+board_specific_register_devices
+hw-breakpoint: found 5 (+1 reserved) breakpoint and 1 watchpoint registers.
+hw-breakpoint: maximum watchpoint size is 8 bytes.
+bio: create slab <bio-0> at 0
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+cfg80211: Calling CRDA to update world regulatory domain
+NET: Registered protocol family 2
+IP route cache hash table entries: 4096 (order: 2, 16384 bytes)
+TCP established hash table entries: 16384 (order: 5, 131072 bytes)
+TCP bind hash table entries: 16384 (order: 6, 393216 bytes)
+TCP: Hash tables configured (established 16384 bind 16384)
+TCP reno registered
+UDP hash table entries: 256 (order: 2, 16384 bytes)
+UDP-Lite hash table entries: 256 (order: 2, 16384 bytes)
+NET: Registered protocol family 1
+RPC: Registered named UNIX socket transport module.
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+bootspi_probe:348 ID 00:00:00:00
+mmc0: SDHCI controller on sdhci-gogin.0 [sdhci-gogin.0] using DMA
+mmc1: SDHCI controller on sdhci-gogin.1 [sdhci-gogin.1] using DMA
+dma_alloc driver init 
+hips_init
+hips_platform_probe: driver registration begun id 0
+hips0: device probe complete
+hips_platform_probe: driver registration begun id 1
+hips1: device probe complete
+hips_platform_probe: driver registration begun id 2
+hips2: device probe complete
+hips_platform_probe: driver registration begun id 3
+hips3: device probe complete
+hips_platform_probe: driver registration begun id 4
+hips4: device probe complete
+hips_platform_probe: driver registration begun id 5
+hips5: device probe complete
+hips_platform_probe: driver registration begun id 6
+hips6: device probe complete
+hips_platform_probe: driver registration begun id 7
+hips7: device probe complete
+stepper_platform_init: driver platform init begun
+
+
+
+stepper_platform_probe: driver registration begun
+
+
+stepper:  platform registration complete
+msgmni has been set to 958
+io scheduler noop registered (default)
+Console: switching to colour frame buffer device 100x30
+Central DMA module init
+mv61x0-vdma mv61x0-vdma.0: Virtual DMA Controller type 0:owned, 6 virt channels, 6 phys channels
+mv61x0-vdma mv61x0-vdma.1: Virtual DMA Controller type 1:shared, 64 virt channels, 5 phys channels
+mv61x0-vdma mv61x0-vdma.2: Virtual DMA Controller type 2:cyclic, 1 virt channels, 1 phys channels
+Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+serial8250.0: ttyS0 at MMIO 0xf8060000 (irq = 32) is a 16550A
+console [ttyS0] enabled
+serial8250.1: ttyS1 at MMIO 0xf8061000 (irq = 33) is a 16550A
+serial8250.2: ttyS2 at MMIO 0xf8062000 (irq = 34) is a 16550A
+serial8250.3: ttyS3 at MMIO 0xf8063000 (irq = 35) is a 16550A
+NAND device: Manufacturer ID: 0xc2, Chip ID: 0xdc (Unknown NAND 512MiB 3,3V 8-bit)
+Bad block table found at page 262080, version 0x01
+Bad block table found at page 262016, version 0x01
+nand_read_bbt: bad block at 0x000003c20000
+nand_read_bbt: bad block at 0x000006ba0000
+nand_read_bbt: bad block at 0x00000b360000
+7 cmdlinepart partitions found on MTD device mv61x0_nand
+Creating 7 MTD partitions on "mv61x0_nand":
+0x000000000000-0x000000800000 : "kernel"
+0x000000800000-0x000000820000 : "u-boot-env"
+0x000000820000-0x0000008a0000 : "bbt"
+0x0000008a0000-0x0000009a0000 : "boot-logo"
+0x0000009a0000-0x0000011a0000 : "backup"
+0x0000011a0000-0x00000d9a0000 : "recovery"
+0x00000d9a0000-0x000020000000 : "filesystem"
+UBI: attaching mtd6 to ubi0
+UBI: physical eraseblock size:   131072 bytes (128 KiB)
+UBI: logical eraseblock size:    126976 bytes
+UBI: smallest flash I/O unit:    2048
+UBI: VID header offset:          2048 (aligned 2048)
+UBI: data offset:                4096
+UBI: max. sequence number:       12422
+UBI: attached mtd6 to ubi0
+UBI: MTD device name:            "filesystem"
+UBI: MTD device size:            294 MiB
+UBI: number of good PEBs:        2351
+UBI: number of bad PEBs:         4
+UBI: number of corrupted PEBs:   0
+UBI: max. allowed volumes:       128
+UBI: wear-leveling threshold:    4096
+UBI: number of internal volumes: 1
+UBI: number of user volumes:     1
+UBI: available PEBs:             0
+UBI: total number of reserved PEBs: 2351
+UBI: number of PEBs reserved for bad PEB handling: 23
+UBI: max/mean erase counter: 19/4
+UBI: image sequence number:  686269433
+UBI: background thread "ubi_bgt0d" started, PID 562
+dw_spi_mmio dw_spi_mmio.0: registered master spi0
+spi spi0.0: setup mode 3, 8 bits/w, 500000 Hz max --> 0
+dw_spi_mmio dw_spi_mmio.0: registered child spi0.0
+dw_spi_mmio dw_spi_mmio.1: registered master spi1
+dw_spi_mmio dw_spi_mmio.2: registered master spi2
+spi spi2.0: setup mode 3, 8 bits/w, 12000000 Hz max --> 0
+dw_spi_mmio dw_spi_mmio.2: registered child spi2.0
+SynopGMAC: synopGMAC_init called 
+Initial MAC addr: 00:18:21:50:48:10
+Detected PHY 0141:0DD1 @ 0
+phy detected at address 0
+uio_pdrv_genirq uio_pdrv_genirq.28: device has more than 5 I/O memory resources.
+ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+ehci ehci.0: Marvell mv61xx EHCI
+ehci ehci.0: new USB bus registered, assigned bus number 1
+ehci ehci.0: irq 98, io mem 0xf9041000
+ehci ehci.0: USB 2.0 started, EHCI 1.00
+usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb1: Product: Marvell mv61xx EHCI
+usb usb1: Manufacturer: Linux 3.2.0-g67a8e16 ehci_hcd
+usb usb1: SerialNumber: ehci.0
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 1 port detected
+ehci ehci.1: Marvell mv61xx EHCI
+ehci ehci.1: new USB bus registered, assigned bus number 2
+ehci ehci.1: irq 99, io mem 0xf9048000
+ehci ehci.1: USB 2.0 started, EHCI 1.00
+usb usb2: New USB device found, idVendor=1d6b, idProduct=0002
+usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb2: Product: Marvell mv61xx EHCI
+usb usb2: Manufacturer: Linux 3.2.0-g67a8e16 ehci_hcd
+usb usb2: SerialNumber: ehci.1
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 1 port detected
+usbcore: registered new interface driver usblp
+Initializing USB Mass Storage driver...
+usbcore: registered new interface driver usb-storage
+USB Mass Storage support registered.
+usbcore: registered new interface driver usbserial
+USB Serial support registered for generic
+usbcore: registered new interface driver usbserial_generic
+usbserial: USB Serial Driver core
+USB Serial support registered for FTDI USB Serial Device
+usbcore: registered new interface driver ftdi_sio
+ftdi_sio: v1.6.0:USB FTDI Serial Converters Driver
+USB Serial support registered for Keyspan - (without firmware)
+USB Serial support registered for Keyspan 1 port adapter
+USB Serial support registered for Keyspan 2 port adapter
+USB Serial support registered for Keyspan 4 port adapter
+usbcore: registered new interface driver keyspan
+keyspan: v1.1.5:Keyspan USB to Serial Converter Driver
+USB Serial support registered for Keyspan PDA
+USB Serial support registered for Keyspan PDA - (prerenumeration)
+usbcore: registered new interface driver keyspan_pda
+keyspan_pda: v1.1:USB Keyspan PDA Converter driver
+USB Serial support registered for MCT U232
+usbcore: registered new interface driver mct_u232
+mct_u232: z2.1:Magic Control Technology USB-RS232 converter driver
+ci13xxx controller reset event received
+ci13xxx mmio platform registration complete
+Trying to free nonexistent resource <00000000f8000000-00000000f80002ff>
+usb 2-1: new high-speed USB device number 2 using ehci
+usb 2-1: New USB device found, idVendor=1a40, idProduct=0101
+usb 2-1: New USB device strings: Mfr=0, Product=1, SerialNumber=0
+usb 2-1: Product: USB 2.0 Hub
+hub 2-1:1.0: USB hub found
+hub 2-1:1.0: 4 ports detected
+gogin-rtc: dev (254:0)
+gogin-rtc gogin-rtc.0: rtc core: registered gogin-rtc as rtc0
+i2c /dev entries driver
+input: Rohm-RTP-BU21029GUL as /devices/virtual/input/input0
+sdhci: Secure Digital Host Controller Interface driver
+sdhci: Copyright(c) Pierre Ossman
+sdhci-pltfm: SDHCI platform and OF driver helper
+usbcore: registered new interface driver usbhid
+usbhid: USB HID core driver
+TCP cubic registered
+Initializing XFRM netlink socket
+NET: Registered protocol family 10
+usb 2-1.1: new high-speed USB device number 3 using ehci
+IPv6 over IPv4 tunneling driver
+NET: Registered protocol family 17
+lib80211: common routines for IEEE802.11 drivers
+lib80211_crypt: registered algorithm 'NULL'
+Registering the dns_resolver key type
+VFP support v0.3: implementor 56 architecture 2 part 20 variant 9 rev 6
+Registering SWP/SWPB emulation handler
+gogin-rtc gogin-rtc.0: setting system clock to 2020-12-20 11:10:19 UTC (1608462619)
+Freeing init memory: 4160K
+usb 2-1.1: New USB device found, idVendor=1286, idProduct=2040
+usb 2-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+usb 2-1.1: Product: Marvell Wireless Device
+usb 2-1.1: Manufacturer: Marvell
+usb 2-1.1: SerialNumber: 0000000000000000
+usb 2-1.3: new high-speed USB device number 4 using ehci
+usb 2-1.3: New USB device found, idVendor=0c45, idProduct=6341
+usb 2-1.3: New USB device strings: Mfr=2, Product=1, SerialNumber=3
+usb 2-1.3: Product: HD 720P Webcam
+usb 2-1.3: Manufacturer: HD 720P Webcam
+usb 2-1.3: SerialNumber: 20170301
+UBIFS: recovery needed
+UBIFS: recovery completed
+UBIFS: mounted UBI device 0, volume 0, name "filesystem"
+UBIFS: file system size:   293695488 bytes (286812 KiB, 280 MiB, 2313 LEBs)
+UBIFS: journal size:       9023488 bytes (8812 KiB, 8 MiB, 72 LEBs)
+UBIFS: media format:       w4/r0 (latest is w4/r0)
+UBIFS: default compressor: lzo
+UBIFS: reserved for root:  0 bytes (0 KiB)
+ci13xxx_mmio ci13xxx_mmio.0: [ci13xxx_start] hw_ep_max = 20
+Scan Function: Sindoh MFP, Setting Gadget Controller Number:
+Scan Function: Sindoh MFP, version: Marvell 61x0 Printer Driver 2012 
+Scan Function: Sindoh MFP, Setting up Config and Functions:
+Printer Function: Printer Function, version: 2012 July 30
+Printer Function: using ci13xxx_mmio, OUT ep1out IN ep1in
+Scan Function: g_Printer: Scan Checked 0
+MFP Printer gadget: MFP Printer ready
+Disabling lock debugging due to kernel taint
+wlan: Loading MWLAN driver
+VID/PID = 1286/2040, Boot2 version = 3119
+rx_work=1 cpu_num=2
+SynopGMAC: synopGMAC_linux_open called 
+P111xR/P1318/P1510/P1518 Phy LEDs
+usbcore: registered new interface driver usb8xxx
+wlan: Driver loaded successfully
+dros_init
+SynopGMAC: synopGMAC_giveup_rx_desc_queue called 
+SynopGMAC: synopGMAC_giveup_tx_desc_queue called 
+SynopGMAC: synopGMAC_linux_open called 
+P111xR/P1318/P1510/P1518 Phy LEDs
+ADDRCONF(NETDEV_UP): eth0: link is not ready
+UBI: attaching mtd4 to ubi1
+UBI: physical eraseblock size:   131072 bytes (128 KiB)
+UBI: logical eraseblock size:    126976 bytes
+UBI: smallest flash I/O unit:    2048
+UBI: VID header offset:          2048 (aligned 2048)
+UBI: data offset:                4096
+UBI: max. sequence number:       117
+UBI: attached mtd4 to ubi1
+UBI: MTD device name:            "backup"
+UBI: MTD device size:            8 MiB
+UBI: number of good PEBs:        64
+UBI: number of bad PEBs:         0
+UBI: number of corrupted PEBs:   0
+UBI: max. allowed volumes:       128
+UBI: wear-leveling threshold:    4096
+UBI: number of internal volumes: 1
+UBI: number of user volumes:     1
+UBI: available PEBs:             0
+UBI: total number of reserved PEBs: 64
+UBI: number of PEBs reserved for bad PEB handling: 2
+UBI: max/mean erase counter: 3/1
+UBI: image sequence number:  1398378225
+UBI: background thread "ubi_bgt1d" started, PID 861
+UBIFS: recovery needed
+UBIFS: recovery completed
+UBIFS: mounted UBI device 1, volume 0, name "backup"
+UBIFS: file system size:   6221824 bytes (6076 KiB, 5 MiB, 49 LEBs)
+UBIFS: journal size:       1015809 bytes (992 KiB, 0 MiB, 6 LEBs)
+UBIFS: media format:       w4/r0 (latest is w4/r0)
+UBIFS: default compressor: lzo
+UBIFS: reserved for root:  293871 bytes (286 KiB)
+UPC0: device registration complete
+UPC1: device registration complete
+UPC:  platform registration complete
+Linux video capture interface: v2.00
+uvcvideo: Found UVC 1.00 device HD 720P Webcam (0c45:6341)
+input: HD 720P Webcam as /devices/platform/ehci.1/usb2/2-1/2-1.3/2-1.3:1.0/input/input1
+usbcore: registered new interface driver uvcvideo
+USB Video Class driver (1.1.1)
+ADDRCONF(NETDEV_UP): mlan0: link is not ready
+wlan: SCAN COMPLETED: scanned AP count=0
+wlan: SCAN COMPLETED: scanned AP count=0
+wlan: SCAN COMPLETED: scanned AP count=0
+wlan: SCAN COMPLETED: scanned AP count=0
+wlan: SCAN COMPLETED: scanned AP count=0
+wlan: SCAN COMPLETED: scanned AP count=0
+wlan: SCAN COMPLETED: scanned AP count=0
+wlan: SCAN COMPLETED: scanned AP count=0
+wlan: SCAN COMPLETED: scanned AP count=0
+wlan: SCAN COMPLETED: scanned AP count=0
+wlan: SCAN COMPLETED: scanned AP count=0
+wlan: SCAN COMPLETED: scanned AP count=0
+wlan: SCAN COMPLETED: scanned AP count=0
+mv61fb_blank:1366: Requested blanking level = 0x00000000
+ADDRCONF(NETDEV_UP): mlan0: link is not ready
+wlan: SCAN COMPLETED: scanned AP count=5
+ADDRCONF(NETDEV_CHANGE): mlan0: link becomes ready
+usb 1-1: new high-speed USB device number 2 using ehci
+usb 1-1: New USB device found, idVendor=0781, idProduct=5567
+usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+usb 1-1: Product: Cruzer Blade
+usb 1-1: Manufacturer: SanDisk
+usb 1-1: SerialNumber: 4C530000320915122323
+scsi0 : usb-storage 1-1:1.0
+mv61fb: driver cmd = unblank
+mv61fb_blank:1366: Requested blanking level = 0x00000000
+mv61fb: unblank
+scsi 0:0:0:0: Direct-Access     SanDisk  Cruzer Blade     1.00 PQ: 0 ANSI: 6
+sd 0:0:0:0: [sda] 30595072 512-byte logical blocks: (15.6 GB/14.5 GiB)
+sd 0:0:0:0: [sda] Write Protect is off
+sd 0:0:0:0: [sda] Mode Sense: 43 00 00 00
+sd 0:0:0:0: [sda] Write cache: disabled, read cache: enabled, doesn't support DPO or FUA
+ sda: sda1
+sd 0:0:0:0: [sda] Attached SCSI removable disk
+FAT-fs (sda1): utf8 is not a recommended IO charset for FAT filesystems, filesystem will be case sensitive!
+mv61fb_blank:1366: Requested blanking level = 0x00000000
